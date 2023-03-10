@@ -45,7 +45,7 @@ I have attached a sample .php file to this repository with a simple example auth
 
 ![Image](Images/SAMPLE6.png)
 ### Explanation for each result:
-* Response = An int value that determines the result; 0 means wrong username, 1 means wrong password (or banned), 2 means the credentials were correct and the username, groupID and moderator privilege is linked to the client id.
+* Response = An int value that determines if the login was a success; 0 means wrong username, 1 means wrong password (or banned), 2 means the credentials were correct and the username, groupID and moderator privilege is linked to the client id.
 * Message = A string value also returned to the relay server for whatever extra data you'd like.
 * Username = A string value that will be linked to the client ID as the username of the player.
 * GroupID = An int value that will be linked to the client ID also, it can be referenced in-game, this could be for a membership system (ie. registered, premium, vip).
