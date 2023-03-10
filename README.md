@@ -23,6 +23,13 @@ The new App ID field allows developers to separate lobbies based on a string (th
 I've included a new lobby system example for LRM with more features and polish. 
 Developers can enable the requirement of server sided account login by toggling the "Use Account Authentication" boolean, [See image](Images/SAMPLE5.png).
 
+## Maximum connections per IP address
+![Image](Images/SAMPLE1.png)
+
+I've added a new system that can limit the amount of connections from the same IP address to the relay server.  Useful to prevent mass spam bot attacks from the same address.  To change the maximum amount of connections from same IP addresses, change the "MaximumConnectionsPerIPAddress" field within the config file to whatever  number you wish.  Leave it as "0" for infinite.
+
+Real world use example; after setting the maximum connections from the same IP address to 2, I opened a game window and I connected to the relay server.  I then opened a second game window and it also connected.  However, when I opened a third game window my connection to the relay server was refused.
+
 ## Optional - Server sided account login authentication system
 ![Image](Images/SAMPLE3.png) 
 
@@ -48,7 +55,3 @@ I have attached a sample .php file to this repository with a simple example auth
 
 `IsModerator = A bool that determines wither or not the client ID has moderator privileges for future moderator requests to the relay server (ie. kicking a player, closing a room)`
 
-## Maximum Connections Per IP Address
-![Image](Images/SAMPLE1.png)
-
-I've added a new system that can limit the amount of connections from the same IP address to the relay server.  Useful to prevent mass spam bot attacks from the same address.  Leave it as "0" for infinite.
