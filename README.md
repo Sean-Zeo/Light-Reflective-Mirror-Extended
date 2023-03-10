@@ -39,7 +39,7 @@ To use authentication via login, you simply add the url to the "AccountAuthentic
 It will connect to your PHP URL and POST the username and password for a response.  You can then write code in your PHP file to connect to your mysql database.
 
 The result string from your web PHP should be;
-{"Response":0,"Message":"","Username":"","GroupID":0,"IsModerator":false}
+`{"Response":0,"Message":"","Username":"","GroupID":0,"IsModerator":false}`
 
 I have attached a sample .php file to this repository with a simple example authentication (without using mySQL database);
 
@@ -47,12 +47,12 @@ I have attached a sample .php file to this repository with a simple example auth
 
 `Response = ID of result, 0 means wrong username, 1 means wrong password (or banned), 2 means the credentials were correct and the username, groupID and moderator privilege is linked to the client id.`
 
-`Message = A string also returned to the relay server for whatever extra data you'd like`
+`Message = A string also returned to the relay server for whatever extra data you'd like.`
 
-`Username = This string will be linked to the client ID as the username of the player`
+`Username = This string will be linked to the client ID as the username of the player.`
 
-`GroupID = An int value that will be linked to the client ID also, it can be referenced in-game, this could be for a membership system (ie. registered, premium, vip)`
+`GroupID = An int value that will be linked to the client ID also, it can be referenced in-game, this could be for a membership system (ie. registered, premium, vip).`
 
-`IsModerator = A bool that determines wither or not the client ID has moderator privileges for future moderator requests to the relay server (ie. kicking a player, closing a room)`
+`IsModerator = A bool that determines wither or not the client ID has moderator privileges for future moderator requests to the relay server (ie. kicking a player, closing a room).`
 
 If using this system, the player name, group ID and moderator privilages will be linked to the client ID and can be referenced ingame.  If the login credentials are incorrect (Response = 0 or 1), the player will not be able to connect to the relay server.
