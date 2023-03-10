@@ -28,7 +28,8 @@ Developers can enable the requirement of server sided account login by toggling 
 
 I've added a new system that can limit the amount of connections from the same IP address to the relay server.  Useful to prevent mass spam bot attacks from the same address.  To change the maximum amount of connections from same IP addresses, change the "MaximumConnectionsPerIPAddress" field within the config file to whatever  number you wish.  Leave it as "0" for infinite.
 
-Real world use example; after setting the maximum connections from the same IP address to 2, I opened a game window and I connected to the relay server.  I then opened a second game window and it also connected.  However, when I opened a third game window my connection to the relay server was refused.
+Real world use example #1; "127.0.0.1" has 6 clients connected, the maximum same ip addresses value is set to 5; therefore the 6th client is kicked.
+Real world use example #2; after setting the maximum connections from the same IP address to 2, I opened a game window and I connected to the relay server.  I then opened a second game window and it also connected.  However, when I opened a third game window my connection to the relay server was refused.
 
 ## Optional - Server sided account login authentication system
 ![Image](Images/SAMPLE3.png) 
