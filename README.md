@@ -44,7 +44,7 @@ The result string from your web PHP should be;
 I have attached a sample .php file to this repository with a simple example authentication (without using mySQL database);
 
 ![Image](Images/SAMPLE6.png)
-### Explanation of each output:
+### Explanation for each field:
 * Response = ID of result, 0 means wrong username, 1 means wrong password (or banned), 2 means the credentials were correct and the username, groupID and moderator privilege is linked to the client id.
 * Message = A string also returned to the relay server for whatever extra data you'd like.
 * Username = This string will be linked to the client ID as the username of the player.
