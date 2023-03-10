@@ -1,4 +1,4 @@
-![Logo](Images/LRM-EXTENDED.png)
+![Logo](Images/LRM-EXTENDED2.png)
 
 # Light Reflective Mirror - Extended
 
