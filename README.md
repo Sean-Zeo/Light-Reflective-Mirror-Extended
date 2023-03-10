@@ -55,3 +55,4 @@ I have attached a sample .php file to this repository with a simple example auth
 
 `IsModerator = A bool that determines wither or not the client ID has moderator privileges for future moderator requests to the relay server (ie. kicking a player, closing a room)`
 
+If using this system, the player name, group ID and moderator privilages will be linked to the client ID and can be referenced ingame.
