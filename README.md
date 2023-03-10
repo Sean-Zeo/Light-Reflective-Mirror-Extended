@@ -24,7 +24,7 @@ I've included a new lobby system example for LRM with more features and polish.
 Developers can enable the requirement of server sided account login by toggling the "Use Account Authentication" boolean, [See image](Images/SAMPLE5.png).
 
 ## Maximum connections per IP address
-![Image](Images/SAMPLE1.png)
+![Image](Images/SAMPLE7.png)
 
 I've added a new system that can limit the amount of connections from the same IP address to the relay server.  Useful to prevent mass spam bot attacks from the same address.  To change the maximum amount of connections from same IP addresses, change the "MaximumConnectionsPerIPAddress" field within the config file to whatever  number you wish.  Leave it as "0" for infinite.
 
