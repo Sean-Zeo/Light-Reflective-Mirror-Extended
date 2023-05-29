@@ -72,7 +72,7 @@ namespace LightReflectiveMirror
                         {
                             useLoginAuthentication = (Program.conf.AccountAuthenticationUrl.Length > 1);
                             if (useLoginAuthentication) {
-                                AttemptLoginAuthentication(authenticationData[1], authenticationData[2], clientId);
+                               Task.Run(() => AttemptLoginAuthentication(authenticationData[1], authenticationData[2], clientId));
                             }
                             else
                             {
@@ -165,7 +165,7 @@ namespace LightReflectiveMirror
                 Program.transport.ServerDisconnect(clientId);
             }
         }
-        async Task<bool> AttemptLoginAuthentication(string username, string password, int clientId)
+        void AttemptLoginAuthentication(string username, string password, int clientId)
         {
             bool result = false;
             using (var wb = new WebClient())
@@ -217,7 +217,6 @@ namespace LightReflectiveMirror
                     Program.transport.ServerDisconnect(clientId);
                 }
             }
-            return result;
         }
 
         /// <summary>
